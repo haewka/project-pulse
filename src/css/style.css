@@ -27,6 +27,7 @@
   text-align: right;
   color: #ffffff;
   text-transform: uppercase;
+  line-height: 42px;
 }
 
 .promo__wrapper h2 {
@@ -37,6 +38,7 @@
   text-align: right;
   color: #ffffff;
   text-transform: uppercase;
+  line-height: 17px;
 }
 
 .promo__items {
@@ -137,4 +139,51 @@
   height: 50px;
   font-size: 16px;
   margin-top: 67px;
+}
+
+.advantages {
+  min-height: 472px;
+  background-color: #f6f6f6;
+  padding: 69px 0 81px 0;
+}
+
+.advantages__header {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #0d0d0d;
+  margin: 0 auto;
+}
+
+.advantages__items {
+  margin: 0 auto;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__heading {
+  margin-top: 38px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+.advantages__descr {
+  max-width: 247px;
+  margin-top: 26px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+.advantages__descr a {
+  color: red;
+  text-decoration: underline;
 }
