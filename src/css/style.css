@@ -1,0 +1,140 @@
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.promo {
+  min-height: 650px;
+  background: url(../img/background/bg1.png) center center/cover no-repeat;
+  padding: 21px 0 93px 0;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.promo__wrapper h1 {
+  margin: 0;
+  margin-top: 91px;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: right;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo__wrapper h2 {
+  margin: 0;
+  margin-top: 17px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo__items {
+  margin-top: 66px;
+  margin-right: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 425px;
+  text-align: center;
+}
+
+.promo__text {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.promo__consultation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.promo__catalog {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  color: #ffffff;
+}
+
+.promo__catalog a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 241px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__text {
+  width: 187px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__text span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__contacts a {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #ffffff;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #c70101;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button_consultation {
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 67px;
+}
