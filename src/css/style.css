@@ -218,6 +218,7 @@
   font-weight: 300;
   text-align: left;
   color: #4b4b4b;
+  border: none;
 }
 
 .consultation__form input:nth-child(3) {
@@ -238,4 +239,48 @@
   color: #ffffff;
   text-transform: uppercase;
   line-height: 36px;
+}
+
+.carousel {
+  padding: 81px 0;
+}
+
+.carousel__inner {
+  width: 750px;
+  margin: 0 auto;
+  position: relative;
+  transition: 4s;
+}
+
+.carousel .slick-prev, .carousel .slick-next {
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-66%);
+  left: -66px;
+}
+
+.carousel .slick-prev:focus, .carousel .slick-next:focus {
+  outline: none;
+}
+
+.carousel .slick-next {
+  right: -66px;
+  left: auto;
+}
+
+.carousel .slick-next img {
+  width: 31px;
+  height: 50px;
+  display: block;
+}
+
+.carousel .slick-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: red;
+  border: none;
+  background-color: #fff;
 }
