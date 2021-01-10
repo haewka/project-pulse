@@ -1,0 +1,159 @@
+@import '../base/_variables'
+.catalog
+    padding: 0 0 103px 0
+    &__tabs
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 69px
+        padding-left: 0
+        margin-bottom: 0
+    &__tab
+        margin: 0 5px
+        width: 220px
+        height: 50px
+        border: solid 2px #d0d0d0
+        font-size: 18px
+        font-weight: 500
+        text-align: center
+        color: #6b6b6b
+        text-transform: uppercase
+        line-height: 48px
+        transform: skew(-30deg)
+        cursor: pointer
+        list-style-type: none
+        div
+            transform: skew(30deg)
+        &_active
+            background-color: $main-color
+            color: #ffffff
+            border: none
+    &__blocks
+        display: none
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        margin-top: 59px
+        &_active
+            display: flex
+    &-block
+        margin-right: 20px
+        margin-bottom: 20px
+        width: 300px
+        min-height: 440px
+        padding: 20px 20px 20px 20px
+        text-align: center
+        border: solid 2px #e8e8e8
+        overflow: hidden
+        &:nth-child(3)
+            margin-right: 0
+        &:nth-child(6)
+            margin-right: 0 
+            
+        &__img
+            img
+                margin: 0 auto
+                display: block
+                width: 140px
+                min-height: 200px
+        &__subheader
+            margin-top: 20px
+            font-size: 16px
+            font-weight: bold
+            text-align: center
+            color: #0d0d0d
+        &__descr
+            margin-top: 16px
+            font-size: 14px
+            font-weight: 300
+            text-align: center
+            color: #0d0d0d
+        &__link
+            margin: 0 auto
+            margin-top: 17px
+            margin-bottom: 19px
+            border-bottom: 1px solid $main-color
+            height: 14px
+            width: 88px
+            line-height: 12px
+            a
+                font-size: 14px
+                font-weight: 500
+                text-align: center
+                color: $main-color
+                text-decoration: none
+        hr
+            margin: 0
+            border-bottom: 0
+        &__footer
+            margin-top: 21px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__price
+            &_old
+                font-size: 14px
+                font-weight: 300
+                text-align: left
+                color: #555555
+                text-decoration: line-through
+            &_new
+                font-size: 20px
+                font-weight: bold
+                text-align: left
+                color: #050505
+        &__btn
+            margin-top: 2px
+        &__wrapper
+            display: flex
+            justify-content: center
+            width: calc(200% + 40px)
+        &__main
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: 0.5s
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__second
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0)
+            transition: 0.5s all
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0
+            &_stats
+                width: 237px
+                position: relative
+                list-style-type: none
+                padding-left: 17px
+                li
+                    position: relative
+                    margin-top: 10px
+                    font-size: 14px
+                    font-weight: 300
+                    text-align: left
+                    color: #555555
+                    line-height: 19px
+                    &:before
+                        position: absolute
+                        top: 6px
+                        left: -18px
+                        display: block
+                        content: ''
+                        width: 5px
+                        height: 5px
+                        background-color: $main-color
+                        margin-right: 14px
+            .catalog-block__link
+                margin-top: 70px
+                width: 48px
+                height: 14px
+                line-height: 12px
+
+
+
+
+    

@@ -14,4 +14,18 @@ $(document).ready(function(){
             }
           ]
     });
+    
+    $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+      $(this)
+        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+        .closest('div.catalog__selector').find('div.catalog__blocks').removeClass('catalog__blocks_active').eq($(this).index()).addClass('catalog__blocks_active');
+    });
+
+    $('.catalog-block__link').each(function(i) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        $('.catalog-block__main').eq(i).toggleClass('catalog-block__main_active');
+        $('.catalog-block__second').eq(i).toggleClass('catalog-block__second_active');
+      })
+    })
   });
