@@ -22,7 +22,7 @@
                 </div>
                 <div class="header__contacts">
                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                   <button class="button">заказать звонок</button>
+                   <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="promo__consultation">
-                    <button class="button button_promo">заказать кОНСУЛЬТАЦИЮ</button>
+                    <button data-modal="consultation" class="button button_promo">заказать кОНСУЛЬТАЦИЮ</button>
                     <div class="promo__catalog">
                         или <a href="#" class="catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
                     </div>
@@ -88,7 +88,7 @@
             <div class="consultation__content">
                 <div class="consultation__subtitle">Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</div>
                 <!-- <div class="consultation__form"> -->
-                    <form class="consultation__form" action="#">
+                    <form class="form " action="#">
                         <input required placeholder="Ваше имя" type="text">
                         <input required placeholder="Ваш телефон" type="number">
                         <input required placeholder="Ваш E-mail" type="email">
@@ -342,7 +342,7 @@
                         <div class="catalog-block__wrapper">
                             <div class="catalog-block__main catalog-block__main_active">
                                 <div class="catalog-block__img"><img src="img/icons/polar_watch.png" alt="polar-watch"></div>
-                                <div class="catalog-block__subheader">Пульсометр Polar FT1</div>
+                                <div class="catalog-block__subheader">Пульсометр Polar FT4</div>
                                 <div class="catalog-block__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                                 <div class="catalog-block__link"><a href="#">ПОДРОБНЕЕ</a></div>
                             </div>
@@ -416,6 +416,37 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4488.588582784581!2d37.64322323551456!3d55.77076048129881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a63664af129%3A0x32043f062d12723a!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDMg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA3MDc4!5e0!3m2!1sru!2sby!4v1610563913372!5m2!1sru!2sby" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="form form_mt25" action="#">
+                <input required placeholder="Ваше имя" type="text">
+                <input required placeholder="Ваш телефон" type="number">
+                <input required placeholder="Ваш E-mail" type="email">
+                <button class="button button_consultation">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="form form_mt25" action="#">
+                <input required placeholder="Ваше имя" type="text">
+                <input required placeholder="Ваш телефон" type="number">
+                <input required placeholder="Ваш E-mail" type="email">
+                <button class="button button_consultation">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время</div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

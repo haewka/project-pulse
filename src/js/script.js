@@ -26,6 +26,21 @@ $(document).ready(function(){
         e.preventDefault();
         $('.catalog-block__main').eq(i).toggleClass('catalog-block__main_active');
         $('.catalog-block__second').eq(i).toggleClass('catalog-block__second_active');
-      })
-    })
+      });
+    });
+  })
+
+
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  });
+
+  $('.button_catalog').each(function(i) {
+    $(this).on('click', function() {
+        $('#order .modal__descr').text($('.catalog-block__subheader').eq(i).text());
+        $('.overlay, #order').fadeIn('slow');
+    });
   });
