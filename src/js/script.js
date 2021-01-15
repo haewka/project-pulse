@@ -28,19 +28,57 @@ $(document).ready(function(){
         $('.catalog-block__second').eq(i).toggleClass('catalog-block__second_active');
       });
     });
-  })
-
-
-  $('[data-modal=consultation]').on('click', function() {
-    $('.overlay, #consultation').fadeIn('slow');
-  });
-  $('.modal__close').on('click', function() {
-    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
-  });
-
-  $('.button_catalog').each(function(i) {
-    $(this).on('click', function() {
-        $('#order .modal__descr').text($('.catalog-block__subheader').eq(i).text());
-        $('.overlay, #order').fadeIn('slow');
+    $('[data-modal=consultation]').on('click', function() {
+      $('.overlay, #consultation').fadeIn('slow');
     });
-  });
+    $('.modal__close').on('click', function() {
+      $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+  
+    $('.button_catalog').each(function(i) {
+      $(this).on('click', function() {
+          $('#order .modal__descr').text($('.catalog-block__subheader').eq(i).text());
+          $('.overlay, #order').fadeIn('slow');
+      });
+    });
+  
+    
+
+    function valideForms(form){
+      $(form).validate({
+        rules:{
+          name: "required",
+          phone: {
+            required:true,
+            minlength: 7
+          },
+          email:{
+            required:true,
+            email:true
+          }
+        },
+        messages:{
+          name: {
+            required:"Введите ваше имя",
+          },
+          phone:{
+            required:"Введите ваш контактный телефон",
+            minlength: jQuery.validator.format("Минимум {0} символов!")
+          },
+          email:{
+            required: "Введите вашу электронную почту",
+            email: "Неправильно введен электронный адрес"
+          }
+        }
+      });
+    };
+
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+
+});
+
+
+  
+
